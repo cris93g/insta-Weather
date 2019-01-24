@@ -16,13 +16,14 @@ export default class Home extends Component {
 	};
 	render() {
 		console.log(this.state.weather);
-		let wea = this.state.weather.map((elem, ind) => {
+		let weatherDisplay = this.state.weather.map((elem, ind) => {
 			return (
-				<div key={elem}>
-					<p>{wea}</p>
+				<div>
+					<p>{`today is going to be ${elem.Category}`}</p>
+					{/* <p>{elem.Text}</p> */}
 				</div>
 			);
 		});
-		return <div className="Home">{wea}</div>;
+		return <div className="Home">{weatherDisplay}</div>;
 	}
 }

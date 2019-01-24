@@ -5,7 +5,7 @@ let mesquite = process.env.apiKey;
 
 axios
 	.get(
-		`http://dataservice.accuweather.com/forecasts/v1/daily/1day/339375?${mesquite}`
+		`http://dataservice.accuweather.com/forecasts/v1/daily/1day/335731?${mesquite}`
 	)
 	.then(response => {
 		weather = response.data;
